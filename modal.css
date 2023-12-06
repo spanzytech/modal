@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Karla', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.container {
+    position: relative;
+    /* width: 40rem; */
+    /* margin: 4rem auto; */
+    height: 100vh;
+    background-color: bisque;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header header header" "aside main main" "footer footer footer";
+}
+
+header {
+    height: 8rem;
+    grid-area: header;
+    /* border: 2px solid red; */
+    background-color: blue;
+    padding: 1rem 0;
+    display: flex;
+}
+
+main {
+    grid-area: main;
+    /* border: 2px solid blue; */
+    background-color: black;
+    /* padding: 1rem; */
+}
+
+aside {
+    grid-area: aside;
+    /* border: 2px solid orange; */
+    background-color: purple;
+    /* padding: 1rem; */
+}
+
+footer{
+    grid-area: footer;
+    /* border: 2px solid green; */
+    background-color: gray;
+    /* padding: 1rem; */
+}
+.logo {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+.create {
+    position: absolute;
+    right: 10rem;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 100);
+    text-align: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.sign {
+    position: absolute;
+    right: 2rem;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 100);
+    text-align: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+}
+
+.create a:hover {
+    cursor: pointer;
+    /* background-color: #fff; */
+    color: olivedrab;
+}
+
+.create:hover {
+    background-color: #fff;
+}
+
+.sign:hover{
+    background-color: #fff;
+}
+
+.sign a:hover {
+    cursor: pointer;
+    /* background-color: #fff; */
+    color: olivedrab;
+}
+
+img {
+    width: auto;
+}
+
+.first {
+    position: relative;
+}
+
+.meaning {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.para1 {
+    padding-bottom: 1rem;
+}
+
+.btn {
+    border-radius: 30px;
+    font-size: 1.3rem;
+    border: none;
+    padding: 0.3rem 0.3rem;
+    transition: .6s ease-in-out;
+    background-color: rgb(0, 0, 100);
+    color: red;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+}
+
+
+.second {
+    
+}
+
+.class-view {
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    /* padding: 2rem; */
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.img-content1 {
+
+}
+
+.desc {
+    padding: 0.6rem 0;
+}
+
+.main-content {
+
+}
+
+.welcome {
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.img-content2 {
+    /* width: 20rem; */
+}
+
+.para2 {
+width: 95%;
+margin-left: 0.3rem;
+}
+
+.foot p{
+    font-size: 2rem;
+    padding: 4rem;
+    text-transform: capitalize;
+}
+
+.icon {
+    display: flex;
+}
+
+
+.form-control {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 0.2rem;
+    gap: 2rem;
+}
+
+.form-control.onError {
+    padding-bottom: 1.5rem;
+}
+
+.three {
+    position: fixed;
+    right: 1rem;
+    background-color: #fff;
+    transform: translateY(-35rem);
+    transition: transform .4s ease;
+    z-index: 10;
+}
+
+.three.active {
+    transform: translateY(0);
+}
+
+.modal-head, .form-container {
+    display: flex;
+}
+
+.modal-head {
+}
+
+.modal-head button {
+    background-color: #ededed;
+    flex: 1;
+}
+
+.modal-head button:first-child {
+    border-right: 1px solid #000;
+}
+
+.modal-head .signup-toggle.active,
+.modal-head .signin-toggle.active {
+    background-color: #fff;
+}
+
+.form-container {
+    width: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    position: relative;
+    /* min-height: 30rem; */
+    
+}
+#contact, #signup {
+    width: 100%;
+    padding: 2rem;
+    display: none;
+}
+
+#contact.active {
+    display: block;
+}
+
+.form-container button {
+    display: block;
+    background-color: rgb(48, 48, 247);
+    border-radius: 10px;
+    width: 100%;
+    color: #fff;
+    margin: 1.5rem auto;
+}
+
+
+#signup.active {
+    display: block;
+}
+
+input {
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    flex: 1;
+}
+
+label {
+    color: green;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    float: left;
+    /* left: 1; */
+    z-index: 2;
+    
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: opacity .4s ease-in-out;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+
+/* handling Errors */
+.error-message {
+    position: absolute;
+    bottom: .5rem;
+    left: 25%;
+    width: 75%;
+    color: #d23939;
+    font-size: .9rem;
+    display: none;
+}
+
+.error-message.onError {
+    display: block;
+}

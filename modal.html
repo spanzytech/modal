@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital@1&family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>modal a page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="head">
+        <div class="logo">my logo</div>
+        <div class="create"><a href="#">create account</a></div>
+        <div class="sign"><a href="#">sign up</a></div>
+      </header>
+      <aside class="side-bar">
+        <div class="first">
+          <h3 class="meaning">taacocamp</h3>
+          <p class="para1">
+            We are here to help you through your coding career. taacocamp is a
+            programming company founded in the year 2022 by. snr. dev johnpaul
+            attama
+          </p>
+          <button class="btn">click to know more</button>
+        </div>
+        <div class="second">
+          <h4 class="class-view">class view</h4>
+          <div class="img-content1">
+            <img
+              src="./pexels-pixabay-256381.jpg"
+              alt="class image"
+              width="400"
+              height="400"
+            />
+          </div>
+          <p class="desc">
+            Here is our address. we are located at n02 peace park road nsukka
+          </p>
+        </div>
+      </aside>
+      <main class="main-content">
+        <h1 class="welcome">welcome to taacocamp</h1>
+        <div class="img-content2">
+          <img
+            src="./pexels-pixabay-417458.jpg"
+            alt="the future is here"
+            width="400"
+            height="400"
+          />
+        </div>
+        <p class="para2">
+          You dont need to have an experience to start with us, we are here to
+          guide you from scratch to end of your training.
+        </p>
+      </main>
+      <footer class="foot">
+        <p>
+          View our full site to know more about taacocamp at taacocamp official
+          website
+        </p>
+        <div class="icon">
+          <p class="iconed">Rated 5 star on googleplay</p>
+          <div class="iconed-icon">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+      </footer>
+      <section class="modal"></section>
+      <section class="three">
+        <nav class="modal-head">
+          <button class="modal-toggle signup-toggle">Create Account</button>
+          <button class="modal-toggle signin-toggle">Sign In</button>
+        </nav>
+        <div class="form-container">
+          <form id="contact">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="your name"/>
+              <p class="error-message">error message</p>
+            </div>
+            <div class="form-control">
+              <label for="phone">Tel</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="your phone number(optional)"
+              />
+              <p class="error-message">error message</p>
+            </div>
+            <div class="form-control">
+              <label for="Email">email</label>
+              <input type="email" name="email" id="email" placeholder="your email address"/>
+              <p class="error-message">error message</p>
+            </div>
+            <div class="form-control">
+              <label for="password">password</label>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="your password"
+              />
+              <p class="error-message">error message</p>
+            </div>
+  
+            <div class="form-control">
+              <label for="desc">country</label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="your country"
+              />
+              <p class="error-message">error message</p>
+            </div>
+            <button type="submit" class="submit">sign up</button>
+          </form>
+  
+          <form action="" id="signup">
+            <div class="form-control">
+              <label for="desc">Email</label>
+              <input type="email" name="email" required/>
+              <p class="error-message">error message</p>
+            </div>
+            <div class="form-control">
+              <label for="desc">password</label>
+              <input type="password" name="password" required/>
+              <p class="error-message">error message</p>
+            </div>
+            <button class="submit">sign In</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="./validateForm.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
